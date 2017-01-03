@@ -1,6 +1,7 @@
 /* This is an Intel 8080 Emulator under Construction */
 
 #include <stdio.h>
+#include "disassembler.h"
 
 int main() {
     printf("Nothing here yet");
@@ -14,7 +15,7 @@ int main() {
  * returns the number of bytes of the op
 **/
 
-int Disassemble8080Op(unsigned char *codebuffer, int pc)
+int Disassemble8080 (unsigned char *codebuffer, int pc)
 {
     unsigned char *code = &codebuffer[pc];
     int opbytes = 1;
